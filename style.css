@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -34,7 +33,7 @@ body::before{
 
 /* utilityclass */
 .regular-txt{
-    fontn font-weight: 400;
+    font-weight: 400;
 }
 
 .main-container {
@@ -105,12 +104,12 @@ body::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid rgb(255, 255, 255);
+    /* border: solid rgb(255, 255, 255); */
 
 }
 
 .location{
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -118,8 +117,90 @@ body::before{
 }
 
 .weather-summary-container{
-    border: solid;
+    /* border: solid; */
     display: flex;
     justify-content:space-between;
-    align-items: baseline;
+    align-items: center;
+}
+
+.weather-summary-img{
+    /* border: solid; */
+    height: 120px;
+    width: 120px;
+}
+
+.weather-summery-info{
+    text-align: end;
+}
+
+.weather-conditions-container{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.condition-item{
+    /* border: solid; */
+    display:flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.condition-item span{
+    font-size: 30px;
+}
+
+.forecast-items-container{
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+.forecast-items-container::-webkit-scrollbar{
+    height: 8px;
+}
+.forecast-items-container::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 99px;
+}
+
+.forecast-item{
+    /* border: solid; */
+    min-width: 70px;
+    background: rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+
+.forecast-item:hover{
+    background: rgb(255, 255, 255, 0.15);
+}
+
+.forecast-item-img{
+    width: 35px;
+    height: 35px;
+}
+
+/* Section Message */
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25%;
+
+}
+.section-message img{
+    height: 180px;
+    width: fit-content;
 }
